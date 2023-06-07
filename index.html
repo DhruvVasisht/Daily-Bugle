@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bugle</title>
+    <link href="https://cdn.discordapp.com/attachments/922708222685622283/1115697417778630677/favicon.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/logo.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="india" onclick="onNavItemClick('india')">INDIA</li> |
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">SPORTS</li> |
+                    <li class="hover-link nav-item" id="TECHNOLOGY" onclick="onNavItemClick('TECHNOLOGY')">TECHNOLOGY</li> |
+                    <li class="hover-link nav-item" id="BUSINESS" onclick="onNavItemClick('BUSINESS')">BUSINESS</li> |
+                    <li class="hover-link nav-item" id="Science" onclick="onNavItemClick('Science')">SCIENCE</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Trending News">
+                <button id="search-button" class="search-button">Search <i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="imgg">
+
+        <img src="https://cdn.discordapp.com/attachments/922708222685622283/1115657049020301423/download.jpeg">
+
+    </div>
+    
+    <div class="greet">
+        <p style="color: black;">Hey,</p>
+        <p id="greetings"></p>
+    </div>
+    
+
+    <div class="timeday">
+        <a href="https://time.is/Delhi" id="time_is_link" rel="nofollow" style="font-size:19px; color:black;">Time in Delhi:</a>
+<span id="Delhi_z424" style="font-size:19px"></span>
+<script src="//widget.time.is/en_gb.js"></script>
+<script>
+time_is_widget.init({Delhi_z424:{template:"TIME<br>DATE", time_format:"hours:minutes", date_format:"dayname, monthname dnum, year"}});
+</script>
+
+    </div>
+
+    
+    
+    <div class="weather">
+        
+        <a class="weatherwidget-io" href="https://forecast7.com/en/28d7077d10/delhi/" data-label_1="DELHI" data-label_2="WEATHER" data-theme="original" >DELHI WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+    </div>
+    <hr>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+    
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+    
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Editor: <b>Dhruv Vasisht</b> <br>
+        <a href="#">Daily Bugle</a></p>
+      </footer>
+</body>
+</html> 
