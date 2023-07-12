@@ -1,4 +1,4 @@
-const API_KEY = 'C-7B1Lu73Yn0a3w-A1SxEw85FFHH5glCIusYhPUBz9VLI';
+const API_KEY = '7B1Lu73Yn0a3w-A1SxEw85FFHH5glCIusYhPUBz9VLI';
 const url = 'https://api.newscatcherapi.com/v2/search?q=' ;
 
 window.addEventListener("load", () => fetchNews("India"));
